@@ -46,32 +46,6 @@ Detects emotional states (sad, sleepy) and plays motivational/educational videos
 
 ---
 
-## 🖥️ System Architecture
-
-```text
-+-----------+        +--------------------+        +-----------------+
-| Microphone| -----> | Speech Recognition | -----> | Transcribed Text|
-+-----------+        +--------------------+        +-----------------+
-       |                                                  ↑
-       |       +---------------------+           +------------------+
-       +-----> | Audio Analysis (MATLAB) | <-----| Audio Signal     |
-               +---------------------+           +------------------+
-
-+------------------+         +-------------------+
-| TTS Output       |<--------| Exam Question Text|
-+------------------+         +-------------------+
-
-+-----------------------------+
-| Emotion Detection (GUI/ML) |
-+-----------------------------+
-           ↓
-+------------------------------+
-| Motivational/Topic Video TTS |
-+------------------------------+
-```
-
----
-
 ## ⚙️ System Requirements
 
 ### 🔧 Hardware
